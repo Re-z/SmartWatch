@@ -6,13 +6,23 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html {
   font-family: 'ACBoucle', serif; }
 
 .block1 {
-  color: white; }
+  color: white;
+  position: relative; }
+  .block1:after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    right: 350px;
+    background: url("../img/block1__watch.png");
+    width: 620px;
+    height: 652px; }
   .block1__inner {
     width: 1200px;
     height: 558px;
@@ -20,10 +30,10 @@ html {
     outline: 1px solid;
     background: url("../img/block1__bg.png"); }
   .block1__intro {
-    outline: 1px solid red;
-    width: 600px;
+    width: 610px;
     padding-top: 20px;
-    padding-left: 10px; }
+    padding-left: 10px;
+    float: left; }
   .block1__title {
     font-size: 60px;
     font-weight: 100;
@@ -36,3 +46,38 @@ html {
     font-weight: bold;
     margin-top: -20px;
     letter-spacing: 2px; }
+    .block1__price-span {
+      font-size: 60px; }
+  .block1__tel {
+    float: right;
+    padding-top: 7px;
+    margin-right: 75px; }
+    .block1__tel-number {
+      font-size: 40px; }
+
+.order {
+  clear: both;
+  width: 400px;
+  position: relative;
+  top: 111px;
+  left: 125px; }
+  .order__text {
+    font-size: 36px;
+    line-height: 25px;
+    margin-bottom: 10px; }
+  .order__btn {
+    background-color: #FFA300;
+    width: 355px;
+    height: 78px;
+    font-size: 60px;
+    color: white;
+    font-weight: 100;
+    font-family: 'ACBoucle', serif;
+    border: none;
+    border-bottom: 5px solid #E38300;
+    border-radius: 5px;
+    text-shadow: .3px .3px 1px black; }
+    .order__btn:focus {
+      outline: none; }
+    .order__btn:hover {
+      cursor: pointer; }

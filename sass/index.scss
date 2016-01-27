@@ -8,12 +8,23 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   font-family: 'ACBoucle', serif;
 }
 .block1 {
   color: white;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    right: 350px;
+    background: url("../img/block1__watch.png");
+    width: 620px;
+    height: 652px;
+  }
   &__inner {
     width: 1200px;
     height: 558px;
@@ -22,10 +33,10 @@ html {
     background: url("../img/block1__bg.png");
   }
   &__intro {
-    outline: 1px solid red;
-    width: 600px;
+    width: 610px;
     padding-top: 20px;
     padding-left: 10px;
+    float: left;
   }
   &__title {
     font-size: 60px;
@@ -41,5 +52,47 @@ html {
     font-weight: bold;
     margin-top: -20px;
     letter-spacing: 2px;
+    &-span {
+      font-size: 60px;
+    }
+  }
+  &__tel {
+    float: right;
+    padding-top: 7px;
+    margin-right: 75px;
+    &-number {
+    font-size: 40px;
+    }
+  }
+}
+.order {
+  clear: both;
+  width: 400px;
+  position: relative;
+  top: 111px;
+  left: 125px;
+  &__text {
+    font-size: 36px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  &__btn {
+    background-color: #FFA300;
+    width: 355px;
+    height: 78px;
+    font-size: 60px;
+    color: white;
+    font-weight: 100;
+    font-family: 'ACBoucle', serif;
+    border: none;
+    border-bottom: 5px solid #E38300;
+    border-radius: 5px;
+    text-shadow: .3px .3px 1px black;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
