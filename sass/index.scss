@@ -71,40 +71,40 @@ html {
     font-size: 40px;
     }
   }
-}
-.order {
-  clear: both;
-  width: 400px;
-  position: relative;
-  top: 111px;
-  left: 125px;
+  &__order{
+    clear: both;
+    width: 400px;
+    position: relative;
+    top: 111px;
+    left: 125px;
+  }
   &__text {
     font-size: 36px;
     line-height: 25px;
     margin-bottom: 10px;
   }
-  &__btn {
-    background-color: #FFA300;
-    width: 355px;
-    height: 78px;
-    font-size: 60px;
-    color: $textColor2;
-    font-weight: 100;
-    font-family: 'ACBoucle', serif;
-    border: none;
-    border-bottom: 5px solid #E38300;
-    border-radius: 5px;
-    text-shadow: .3px .3px 1px black;
-    &:focus {
-      outline: none;
-    }
-    &:hover {
-      cursor: pointer;
-    }
+}
+.order-btn {
+  background-color: #FFA300;
+  width: 355px;
+  height: 78px;
+  font-size: 60px;
+  color: $textColor2;
+  font-weight: 100;
+  font-family: 'ACBoucle', serif;
+  border: none;
+  border-bottom: 5px solid #E38300;
+  border-radius: 5px;
+  text-shadow: .3px .3px 1px black;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
+
 .block2 {
-  position: relative;
   &__inner {
     position: relative;
     width: 1200px;
@@ -159,6 +159,278 @@ html {
   width: 420px;
   line-height: 32px;
   font-weight: bold;
+  }
 }
-  
+.block3 {
+  &__inner {
+    width: 1200px;
+    height: 855px;
+    position: relative;
+    margin: 0 auto;
+    background: url("../img/block3__bg.png") no-repeat bottom;
+    &:before {
+      content: '';
+      position: absolute;
+      background: url("../img/block3__dash_vertical.png");
+      width: 4px;
+      height: 227px;
+      bottom: 255px;
+      right: 495px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      background: url("../img/block3__dash_horizontal.png");
+      width: 185px;
+      height: 4px;
+      bottom: 175px;
+      right: 250px;
+    }
+  }
+  &__title {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: $textColor;
+    position: relative;
+    top: 188px;
+    left: 25px;
+  }
+  &__phone {
+    background: url("../img/block3__phone.png");
+    width: 604px;
+    height: 297px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+  }
+  &__text {
+    width: 380px;
+    bottom: 107px;
+    left: 72px;
+    line-height: 33px;
+    font-weight: bold;
+    font-size: 30px;
+    color: $textColor2;
+    position: absolute;
+
+  }
+  &__bluetooth {
+    background: url('../img/block3__bluetooth.png');
+    width: 97px;
+    height: 130px;
+    position: absolute;
+    bottom: 110px;
+    right: 450px;
+  }
+  &__span {
+    position: absolute;
+    font-size: 48px;
+    color: white;
+    bottom: 240px;
+    right: 285px;
+    font-weight: bold;
+  }
+  &__watch {
+    width: 199px;
+    height: 320px;
+    background: url("../img/block3__watch.png");
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+  }
+}
+.block4 {
+  &__inner {
+    width: 1200px;
+    height: 712px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../img/block4__bg.png") no-repeat bottom;
+  }
+  &__title {
+    font-size: 48px;
+    color: #7F7F7F;
+    width: 540px;
+    position: absolute;
+    right: 0;
+    top: 130px;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+  &__headphones {
+    width: 274px;
+    height: 439px;
+    background: url("../img/block4__headphones.png");
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  &__text {
+    line-height: 33px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 90px;
+    width: 450px;
+  }
+}
+.order-btn-wrap {
+  position: absolute;
+  bottom: 290px;
+  right: 142px;
+}
+.order-btn_gift {
+  width: 320px;
+  height: 72px;
+  text-align: left;
+  padding-left: 23px;
+  font-size: 48px;
+  font-weight: bold;
+  background-image: url("../img/gift.png");
+  background-repeat: no-repeat;
+  background-position: 230px 2px;
+}
+.block5 {
+  &__inner {
+    width: 1200px;
+    height: 690px;
+    outline: 1px solid red;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+  &__title {
+    font-size: 48px;
+    color: $textColor;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__span {
+    color: #84b0a4;
+    font-size: 36px;
+    text-align: center;
+  }
+  &__watch {
+    width: 422px;
+    height: 422px;
+    position: absolute;
+    left: 384px;
+    top: 230px;
+    background-image: url("../img/block5__watch.png");
+  }
+}
+.block5__benefits {
+  list-style-type: none;
+  column-count: 2;
+  &-item {
+    font-size: 24px;
+    position: absolute;
+  }
+}
+//start list items discribing
+#microphone {
+  left: 240px;
+  top: 247px;
+  &:after {
+    content: '';
+    background: url("../img/microphone.png");
+    width: 28px;
+    height: 35px;
+    position: absolute;
+    right: -42px;
+  }
+}
+#phone {
+  left: 88px;
+  top: 372px;
+  &:after {
+    content: '';
+    background: url("../img/phone.png");
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: -42px;
+  }
+}
+#email {
+  bottom: 146px;
+  left: 70px;
+  &:after {
+    content: '';
+    background: url("../img/email.png");
+    width: 36px;
+    height: 28px;
+    position: absolute;
+    right: -42px;
+  }
+}
+#adress-book {
+  bottom: 11px;
+  left: 168px;
+  &:after {
+    content: '';
+    background: url("../img/address-book.png");
+    width: 32px;
+    height: 36px;
+    position: absolute;
+    right: -42px;
+    top: -5px;
+  }
+}
+#media {
+  right: 130px;
+  top: 247px;
+  padding-left: 50px;
+  &:before {
+    content: '';
+    background: url("../img/media.png");
+    width: 32px;
+    height: 36px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+}
+#music {
+   right: 110px;
+   top: 373px;
+   padding-left: 50px;
+   &:before {
+     content: '';
+     background: url("../img/music.png");
+     width: 35px;
+     height: 36px;
+     position: absolute;
+     left: 0;
+   }
+ }
+#rss{
+  right: 197px;
+  bottom: 148px;
+  padding-left: 50px;
+  &:before {
+    content: '';
+    background: url("../img/rss.png");
+    width: 36px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+}
+#camera{
+  right: 152px;
+  bottom: 8px;
+  padding-left: 50px;
+  &:before {
+    content: '';
+    background: url("../img/camera.png");
+    width: 36px;
+    height: 31px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
 }
